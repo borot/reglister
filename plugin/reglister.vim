@@ -22,6 +22,7 @@ endfunction
 noremap <unique><script> <Plug>TypecorrAdd <SID>Add
 noremap <SID>Add :call <SID>Add('aaa', 'bbb')<CR>
 augroup reglister
+  autocmd VimEnter * call reglister#hello_world()
   autocmd InsertEnter * call reglister#stl()
 augroup END
 
